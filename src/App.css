@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: center;
+  background: #f5f5f5;
+  margin: 30px 20px;
+  min-height: 320px;
+  min-width: 320px;
+  border-radius: 10px;
+  padding: 33.5px 34.5px;
+}
+
+.title {
+  margin-block: 0px;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dice {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 0px 0px;
+  color: #2b283a;
+}
+
+.roll-count {
+  margin: 5px;
+  font-weight: 500;
+}
+
+.roll-dice {
+  height: 50px;
+  white-space: nowrap;
+  width: auto;
+  padding: 6px 21px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035ff;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
